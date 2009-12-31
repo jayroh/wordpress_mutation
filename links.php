@@ -4,7 +4,7 @@ Template Name: Links
 */
 ?>
 <?php get_header(); ?>
-<h2>Links:</h2>
+<h3>Links:</h3>
 <ul>
 	<?php wp_list_bookmarks(); ?>
 </ul>

@@ -29,8 +29,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	vertical-align: baseline;
 	background: transparent;
 }
-body {
+body { 
+	background-color:#fff; 
+	color:#646C73; 
+	font-family:Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; 
+	font-size: .625em; /* 62.5% of browser default (16px) is 10px */ 
 	line-height: 1;
+	text-align:center; 
 }
 ol, ul {
 	list-style: none;
@@ -55,12 +60,25 @@ table {
 /* ================= */
 /* = TYPE DEFAULTS = */
 /* ================= */
-h1 {font-size: 2em;}
-h2 {font-size: 1.4em; margin-top:10px;}
-h3 {font-size: 1.2em; margin-top:10px;}
-h4 {font-size: 1em;}
+h1 {font-size: 2em; }
+h2 {font-size: 2em; }
+h3 {font-size: 1.6em; margin-top:10px;}
+h4 {font-size: 1.5em;}
 
 /* ================ */
 /* = GLOBAL SYLES = */
 /* ================ */
-p { margin-bottom:1em; }
+a:link,
+a:visited { color:#6E9ABF; }
+a:hover,
+a:active { color:#425C73; }
+p { margin-bottom:1em; font-size:1.5em; line-height:1.5em; }
+
+/* ========== */
+/* = LAYOUT = */
+/* ========== */
+#header { padding:2em 0 2em 57%; text-align:right; }
+#header h1,
+#header h2 { display:inline; line-height:1.3em;}
+#header h2:before { content:" - ";}
+#wrapper { width:960px; margin:0 auto; text-align:left; }

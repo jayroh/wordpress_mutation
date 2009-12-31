@@ -11,7 +11,7 @@
 	}
 ?>
 <?php if ( have_comments() ) : ?>
-	<h3><?php comments_number('No Comments', 'One Replies', '% Replies' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h4><?php comments_number('No Comments', 'One Replies', '% Replies' );?> to &#8220;<?php the_title(); ?>&#8221;</h4>
 	<ol class="commentlist">
 		<?php wp_list_comments(); ?>
 	</ol>
@@ -28,7 +28,7 @@
 <?php if ( comments_open() ) : ?>
 	<div id="respond">
 
-		<h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
+		<h4><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
 
 		<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 

@@ -12,7 +12,10 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-		<div id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<p><?php bloginfo('description'); ?></p>
-		</div>
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+				<h2><?php bloginfo('description'); ?></h2>
+			</div>
+			<div id="body">
+			
