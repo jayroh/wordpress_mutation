@@ -37,12 +37,14 @@ body {
 	line-height: 1;
 	text-align:center; 
 }
-ol, ul {
-	list-style: none;
+ul, ol { 
+	padding-bottom:1.5em;
+	padding-left:1.6em;
 }
-blockquote, q {
-	quotes: none;
-}
+ul { list-style: disc; }
+ol { list-style: decimal; }
+
+blockquote, q {	quotes: none; }
 
 /* remember to define focus styles! */
 :focus{outline:0;}
@@ -72,7 +74,8 @@ a:link,
 a:visited { color:#6E9ABF; }
 a:hover,
 a:active { color:#425C73; }
-p { margin-bottom:1em; font-size:1.5em; line-height:1.5em; }
+p,
+li { margin-bottom:1em; font-size:1.5em; line-height:1.5em; }
 
 /* ========== */
 /* = LAYOUT = */
