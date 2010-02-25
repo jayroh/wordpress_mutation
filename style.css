@@ -30,7 +30,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	background: transparent;
 }
 body { 
-	background-color:#fff; 
+	background:#fff url(images/bg.jpg) -400px -130px no-repeat; 
 	color:#646C73; 
 	font-family:Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif; 
 	font-size: .625em; /* 62.5% of browser default (16px) is 10px */ 
@@ -71,7 +71,7 @@ h4 {font-size: 1.5em;}
 /* = GLOBAL SYLES = */
 /* ================ */
 a:link,
-a:visited { color:#6E9ABF; }
+a:visited { color:#5e87d9; }
 a:hover,
 a:active { color:#425C73; }
 p, li { margin-bottom:1em; font-size:1.5em; line-height:1.5em; }
@@ -85,14 +85,20 @@ img.alignleft { margin-right:1.5em; margin-bottom:1.5em; }
 /* ========== */
 /* = LAYOUT = */
 /* ========== */
-#header { padding:2em 0 2em 57%; text-align:right; }
+#header { padding:48px 0em 0em 35px; text-align:justify; width:300px; float:left; }
 #header h1,
-#header h2 { display:inline; line-height:1.3em;}
+#header h2 { display:inline; line-height:1.5em; color:#fff; text-shadow: #000 1px 1px 2px; font-size:2.2em; font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif;}
+#header h1 a { color:#fff; font-weight:bold; font-style:italic; text-decoration:none; font-size:1.4em;}
 #header h2:before { content:" - ";}
-#wrapper { width:960px; margin:0 auto; text-align:left; }
+#wrapper { width:100%; margin:0 auto; text-align:left; }
 
 
 /* ================ */
 /* = POST-RELATED = */
 /* ================ */
-#body .post { margin-bottom:6em; }
+div#body { margin-left:440px; padding-top:43px;}
+#body .post { margin-bottom:6em; width:590px; }
+#body .post h3 { font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; font-size:2.6em; color:#5e87d9; }
+#body .post h3 a { text-decoration:none; color:#5e87d9; text-shadow: #d7d7d7 1px 1px 1px;}
+#body .post p { font-family: Helvetica, Arial, sans-serif; line-height:1.6em; }
+#body .post .meta { font-size:1.1em; font-style:italic; color:#474747; font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; }
