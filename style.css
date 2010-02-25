@@ -102,3 +102,5 @@ div#body { margin-left:440px; padding-top:43px;}
 #body .post h3 a { text-decoration:none; color:#5e87d9; text-shadow: #d7d7d7 1px 1px 1px;}
 #body .post p { font-family: Helvetica, Arial, sans-serif; line-height:1.6em; }
 #body .post .meta { font-size:1.1em; font-style:italic; color:#474747; font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; }
+#body .post blockquote { border-left:dotted 2px #848484; background-color:#ededed; padding:2.2em 1em .1em 3em; margin-bottom:2em; font-size:.9em;  font-style:italic; line-height:1.8em;}
+#body .post blockquote p { line-height:1.8em;}
