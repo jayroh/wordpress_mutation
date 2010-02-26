@@ -105,7 +105,7 @@ div#body { margin-left:440px; padding-top:43px; overflow:hidden;}
 #body .post p { font-family: Helvetica, Arial, sans-serif; line-height:1.6em; }
 #body .post .meta { font-size:1em; color:#474747; text-transform:uppercase; letter-spacing:1px; padding:1em 0; border-bottom:dotted 1px #d5d5d5;}
 #body .post blockquote { border-left:dotted 1px #848484; background-color:#ededed; padding:2.2em 1em .1em 3em; margin-bottom:2em; font-size:.9em;  font-style:italic; line-height:1.8em;}
-#body .post blockquote p { line-height:1.8em; }
+#body .post blockquote p { line-height:1.8em; margin-bottom:0; padding-bottom:1em; }
 #body .post .footer { 
 	font-size:1em; 
 	color:#474747; 
