@@ -71,9 +71,11 @@ h4 {font-size: 1.5em;}
 /* = GLOBAL SYLES = */
 /* ================ */
 a:link,
-a:visited { color:#5e87d9; }
+a:visited { color:#5e87d9; text-decoration:none; }
 a:hover,
-a:active { color:#425C73; }
+a:active { color:#425C73; border-bottom:dotted 1px #5E87D9 !important; }
+a.no-hover:hover { border-bottom:none !important; }
+
 p, li { margin-bottom:1em; font-size:1.5em; line-height:1.5em; }
 .alignright { float:right; }
 .alignleft { float:left; }
@@ -96,11 +98,41 @@ img.alignleft { margin-right:1.5em; margin-bottom:1.5em; }
 /* ================ */
 /* = POST-RELATED = */
 /* ================ */
-div#body { margin-left:440px; padding-top:43px;}
+div#body { margin-left:440px; padding-top:43px; overflow:hidden;}
 #body .post { margin-bottom:6em; width:590px; }
-#body .post h3 { font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; font-size:2.6em; color:#5e87d9; }
-#body .post h3 a { text-decoration:none; color:#5e87d9; text-shadow: #d7d7d7 1px 1px 1px;}
+#body .post h3 { font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; font-size:2.6em; color:#5e87d9; text-shadow: #d7d7d7 1px 1px 1px; clear:both;}
+#body .post h3 a { text-decoration:none; color:#5e87d9; }
 #body .post p { font-family: Helvetica, Arial, sans-serif; line-height:1.6em; }
-#body .post .meta { font-size:1.1em; font-style:italic; color:#474747; font-family: "Adobe Garamond Pro", Georgia, Cambria, "Times New Roman", Times, serif; }
-#body .post blockquote { border-left:dotted 2px #848484; background-color:#ededed; padding:2.2em 1em .1em 3em; margin-bottom:2em; font-size:.9em;  font-style:italic; line-height:1.8em;}
-#body .post blockquote p { line-height:1.8em;}
+#body .post .meta { font-size:1em; color:#474747; text-transform:uppercase; letter-spacing:1px; padding:1em 0; border-bottom:dotted 1px #d5d5d5;}
+#body .post blockquote { border-left:dotted 1px #848484; background-color:#ededed; padding:2.2em 1em .1em 3em; margin-bottom:2em; font-size:.9em;  font-style:italic; line-height:1.8em;}
+#body .post blockquote p { line-height:1.8em; }
+#body .post .footer { 
+	font-size:1em; 
+	color:#474747; 
+	text-transform:uppercase; 
+	letter-spacing:1px; 
+	font-weight:bold;	
+}
+
+/* ==================== */
+/* = SINGLE POST PAGE = */
+/* ==================== */
+.single div#body { padding-top:0px;}
+.prev, 
+.next { 
+	font-size:1em; 
+	color:#474747; 
+	text-transform:uppercase; 
+	letter-spacing:1px; 
+	padding:15px 0 0em 0;
+	height:38px;
+	font-family: Helvetica, Arial, sans-serif; 
+	float:left; 
+	width:295px; 
+	display:block;
+	line-height:1.7em;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.next { text-align:right; }

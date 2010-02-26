@@ -4,10 +4,12 @@
 		<?php while (have_posts()) : the_post(); ?>
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-				<p class="meta"><?php the_time('F jS, Y') ?></p>
+				<p class="meta">
+					<span class="date"><?php the_time('F jS, Y') ?></span>
+					<span class="category">in <?php the_category(', '); ?></span>
+				</p>
 				<?php the_content('Read More &raquo;'); ?>
-				<p>
-					<?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | 
+				<p class="footer">
 					<?php edit_post_link('Edit', '', ' | '); ?>  
 					<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
 				</p>

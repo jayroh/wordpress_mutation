@@ -2,10 +2,15 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<?php previous_post_link('&laquo; %link') ?> | <?php next_post_link('%link &raquo;') ?>
+		<span class="prev"><?php previous_post_link('%link') ?></span>
+		<span class="next"><?php next_post_link('%link') ?></span>
 
 		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<h3><?php the_title(); ?></h3>
+			<p class="meta">
+				<span class="date"><?php the_time('F jS, Y') ?></span>
+				<span class="category">in <?php the_category(', '); ?></span>
+			</p>
 			<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 			<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
